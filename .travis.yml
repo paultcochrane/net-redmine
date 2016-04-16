@@ -10,7 +10,7 @@ perl:
     - "5.10"
 
 install:
-    - cpanm Module::Install:AuthorTests
+    - cpanm Module::Install::AuthorTests
     - cpanm --installdeps --notest . || { cat ~/.cpanm/build.log ; false ; }
       #- cpanm Test::Spelling Test::Perl::Critic || { cat ~/.cpanm/build.log ; false ; }
 
